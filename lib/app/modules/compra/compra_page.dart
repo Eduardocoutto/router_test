@@ -25,9 +25,12 @@ class _CompraPageState extends ModularState<CompraPage, CompraController> {
           RaisedButton(
             child: Text("ABRIR PRODUTO"),
             onPressed: () {
+              // Modular.to.pushNamedAndRemoveUntil(
+              //     '/produtos/produto', ModalRoute.withName('/'));
+
               Modular.to.pushNamedAndRemoveUntil(
-                  '/produtos/produto', ModalRoute.withName('/'));
-              Modular.to.pushNamed('/produtos');
+                  '/produtos', ModalRoute.withName('/'));
+              //Modular.to.pushNamed('/produtos');
             },
           ),
           RaisedButton(

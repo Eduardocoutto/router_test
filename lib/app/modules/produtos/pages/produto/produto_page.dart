@@ -31,20 +31,13 @@ class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoController> {
             },
           ),
           RaisedButton(
-            child: Text("FECHAR PRODUTOS/ABRIR NOVO"),
-            onPressed: () {
-              Modular.link.pushNamedAndRemoveUntil(
-                  '/produto', ModalRoute.withName('//produtos'));
-            },
-          ),
-          RaisedButton(
             child: Text("/produtos"),
             onPressed: () {
               Modular.link.popUntil(ModalRoute.withName('/produtos'));
             },
           ),
           RaisedButton(
-            child: Text("ABRIR COMPRA/FECHAR OUTRAS PAG"),
+            child: Text("/compra (FECHANDO ABERTAS)"),
             onPressed: () {
               Modular.to
                   .pushNamedAndRemoveUntil('/compra', ModalRoute.withName('/'));

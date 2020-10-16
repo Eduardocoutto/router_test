@@ -18,7 +18,6 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter('/', module: HomeModule()),
-        ModularRouter('/home', child: (_, args) => HomePage()),
         ModularRouter('/compra', module: CompraModule()),
         ModularRouter('/produtos', module: ProdutosModule()),
       ];

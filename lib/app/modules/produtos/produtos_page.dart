@@ -25,7 +25,7 @@ class _ProdutosPageState
           RaisedButton(
             child: Text("ABRIR PRODUTO PAGE"),
             onPressed: () {
-              Modular.to.pushNamed('/produto');
+              Modular.link.pushNamed('/produto');
             },
           )
         ],
